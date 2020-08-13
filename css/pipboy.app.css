@@ -1,0 +1,280 @@
+@font-face
+{
+    font-family: Pipboy;
+    src: url('../monofonto.ttf'); 
+}
+
+body
+{   
+    font-family: Pipboy, sans-serif;
+    color: #14fe17;
+    background: #272b23;
+}
+
+.navbar
+{
+    border-bottom: 2px solid;
+    margin: 0px 10px;
+
+}
+
+.navbar::before, .navbar::after
+{
+    height: 5px;
+    width: 2px;
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 5000;
+    background: #14fe17;
+    bottom: -6px;
+}
+
+.navbar::before
+{
+    left: 0px;
+}
+
+.navbar::after
+{
+    right: 0px;
+}
+
+.center-image
+{
+    position: absolute;
+    margin: auto;
+    width: 100%;
+}
+
+.center-image img
+{
+    margin: auto;
+    display: block;
+    position: relative;
+    max-height: 300px;
+    margin-top: 100px;
+    filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(7) brightness(1) contrast(2);
+}
+
+.pip-footer
+{
+    position: fixed;
+    bottom: 0px;
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 0px 600px;
+}
+
+
+
+ul > li.nav-item > a.nav-link, ul > li.nav-item.active > a.nav-link
+{
+    color: #14fe17 !important;
+    font-size: 32px;
+    line-height: 22px;
+    padding-bottom: 0px;
+}
+.navbar.navbar-light .navbar-nav
+{
+    margin: 0px 50px;
+}
+
+.navbar-nav
+{
+    width: 100%;
+}
+
+.navbar-light .navbar-nav > li.nav-item > .nav-link,  .navbar-light .navbar-nav > li.navbar-item.active > .nav-link
+{
+    text-align: center;
+    margin: auto;
+    font-size: 32px;
+    line-height: 22px;
+    padding-bottom: 0px;
+    z-index: 50;
+    position: relative;
+    background: #272b23 ;
+}
+
+.navbar-item.active::before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 22px;
+    top: 26px;
+    background: #272b23 ;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-top: 2px solid;
+    left: 0px;
+}
+
+.navbar.navbar-light .navbar-nav > li
+{
+    padding: 0px 20px;
+}
+
+.navbar-light ul.navbar-nav > li
+{
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+body::after
+{
+    height: 100%;
+    width: 100%;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: repeating-linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.4) 1px, transparent 1px, transparent 2px);
+    opacity: 0.3;
+    z-index: 1000000;
+    pointer-events: none;
+}
+
+.nav.nav-tabs
+{
+    margin: 20px;
+    border-bottom: none;
+}
+
+.nav.nav-tabs > .nav-item > .nav-link:hover
+{
+    border: 1px solid transparent;
+}
+
+.nav.nav-tabs > li > a
+{
+    font-size: 26px !important;
+    background: transparent !important;
+    border: 1px solid transparent !important;
+    padding: 5px 5px;
+}
+
+.nav.nav-tabs > li:nth-child(2) > a:nth-child(1)
+{
+    opacity: 0.5;
+}
+
+.nav.nav-tabs > li:nth-child(3) > a:nth-child(1)
+{
+    opacity: 0.2;
+}
+
+.container
+{
+    margin-left: 45px;
+}
+
+.level-progress
+{
+    width: 100%;
+    height: 10px;
+    border: 2px solid;
+    display: inline-block;
+}
+
+.level-progress-indicator
+{
+    height: 6px;
+    background: #14fe17;
+    position: relative;
+    width: 70%;
+}
+
+.navbar.navbar-light.pip-footer
+{
+    border: none;
+    background: rgba(0, 255, 0, 0.08);
+    font-size: 22px;
+}
+
+.navbar.pip-footer .col-3 .navbar.pip-footer .col-6 
+{
+    background: rgba(0, 255, 20, .4);
+}
+
+.stat-bar
+{
+    width: 70px;
+    margin-left: 730px;
+}
+
+#status
+{
+    max-width: 400px;
+    
+}
+
+#bottom-progress
+{
+    margin-top: 450px;
+
+}
+
+#right-progress
+{
+    margin-top: 100px;
+}
+
+#right-progress2
+{
+    margin-top: 200px;
+}
+
+#right-progress2
+{
+    margin-left: -420px;
+}
+
+.item-list
+{   
+    font-size: 30px;
+    float: left;
+    padding: 0px;
+    list-style: none;
+    margin: 40px;
+}
+
+.item-list li a
+{
+   
+    display: block;
+    width: 300px;
+    padding: 5px 10px;
+    border-radius: 2px;
+    color: #14fe17;
+}
+
+.item-list li a:hover
+{
+    text-decoration: none;
+    background: #14fe17;
+    color: #272b23;
+}
+
+.tab-pane.full
+{
+    height: calc(100vh - 180px);
+}
+
+.item-stats
+{   
+    font-size: 20px;
+    position: absolute;
+    right: 0px;
+    bottom: 120px;
+    width: 200px;
+    
+}
+
+.item-stats .row .col-12
+{
+    background: rgba(16, 255, 0, .15);
+    margin-bottom: 2px;
+}
